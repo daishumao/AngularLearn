@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app='MyApp'>
+    <head>
+        <script type='text/javascript' src='../angular.js'></script>
+        <script type="text/javascript" src='./expressions.js'></script>
+    </head>
+        <body>         
+            <div ng-controller='MyController'>
+                <input ng-model='expr' type='text' placeholder='Enter a expression'>
+                <h2>{{ parsedValue }}</h2>
+            </div>
+            <div ng-controller='MyController2'>
+                <input ng-model='to' type='email' placeholder='Enter your email'>
+                <textarea ng-model='emailBody'></textarea>
+                <pre>{{ prevoewText }}</pre>
+            </div>            
+        </body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html ng-app='MyApp'>
+	<head>
+                <script type='text/javascript' src='../angular.js'></script>
+                <script type="text/javascript" src='./filters.js'></script>
+	</head>
+            <body ng-controller='FiltersController'>
+                <div>
+                    <label>Currency</label>  {{ 1200.2121 | currency }}
+                </div>
+                <div>
+                    <label>Date</label>  {{ Date | date:'fullDate' }}
+                </div>                
+            </body>
+</html>
